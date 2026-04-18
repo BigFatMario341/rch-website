@@ -271,7 +271,7 @@ body {
     <ul>
         <li><a href="https://bigfatmario341.github.io/rch-website/why-chose.html" target="_blank" rel="noopener">Why Choose RCH Transportation</a></li>
         <li><a href="https://bigfatmario341.github.io/rch-website/professional-services.html" target="_blank" rel="noopener">Our Professional Services</a></li>
-        <li><a href="#" id="what-we-move-link">What We Move</a></li>
+        <li><a href="https://bigfatmario341.github.io/rch-website/what-we-move.html" target="_blank" rel="noopener">What We Move</a></li>
     </ul>
 </div>
 
@@ -353,16 +353,10 @@ menuBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 menuOverlay.addEventListener('click', closeMenu);
 
-// Menu link behavior
+// Close menu when clicking any link
 document.querySelectorAll('.mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
         closeMenu();
-        
-        // For "What We Move" (still placeholder)
-        if (link.id === 'what-we-move-link') {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-        // Why Choose and Professional Services open in new tabs (handled by target="_blank")
     });
 });
 
