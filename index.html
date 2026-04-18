@@ -270,8 +270,8 @@ body {
     <h2>Menu</h2>
     <ul>
         <li><a href="https://bigfatmario341.github.io/rch-website/why-chose.html" target="_blank" rel="noopener">Why Choose RCH Transportation</a></li>
-        <li><a href="#" id="services-link">Our Professional Services</a></li>
-        <li><a href="#" id="whatwe-move-link">What We Move</a></li>
+        <li><a href="https://bigfatmario341.github.io/rch-website/professional-services.html" target="_blank" rel="noopener">Our Professional Services</a></li>
+        <li><a href="#" id="what-we-move-link">What We Move</a></li>
     </ul>
 </div>
 
@@ -358,11 +358,11 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
         closeMenu();
         
-        // Only close menu for external/internal links (Why Choose opens in new tab)
-        if (link.id === 'services-link' || link.id === 'whatwe-move-link') {
+        // For "What We Move" (still placeholder)
+        if (link.id === 'what-we-move-link') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        // Why Choose link opens in new tab automatically due to target="_blank"
+        // Why Choose and Professional Services open in new tabs (handled by target="_blank")
     });
 });
 
